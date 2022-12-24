@@ -16,8 +16,8 @@ class MainController extends Controller
     function checklogin(Request $request)
     {
         $messages = [
-            "name.required" => "Name is required",
-            "password.required" => "Password is required",
+            "name.required" => "Please Enter Your Name",
+            "password.required" => "Please Enter Your Password",
            
         ];
         $validator = Validator::make($request->all(), [
